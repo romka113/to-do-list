@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-header">Nauja uzduotis </div>
+  <div class="card-body">
+    <label class="form-label">Uzuoties pavadinimas</label>
+    <input type="text" class="form-control" placeholder="Ivesti norima uzduoti" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="cleaning">
+    <div>
+      <label>Pasirinkti uzduoties skubuma</label><br>
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" [(ngModel)]="cleaningType">
+        <option value="Skubus" >Skubus</option>
+        <option value="Rutinis" >Rutininis</option>
+        <option value="Neskubus">neskubus</option>
+        <option value="Ypacskubus">Ypac skubus</option>
+      </select>
+      <button class="btn btn-success mt-2" (click)="addTask()">Click</button>
+    </div>
+  </div>
+
+</div>
+
+
+

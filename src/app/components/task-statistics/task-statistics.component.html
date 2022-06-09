@@ -1,0 +1,17 @@
+<div class="mt-3">
+  <div class="alert alert-success">
+    Uzduociu kiekis <strong>{{taskTotal}}</strong> <br>
+  </div>
+  <div class="alert alert-warning" *ngIf="taskSkubus!=0" [ngClass]="{'d-none': taskSkubus==0}">
+    Prioritetas skkubus: <strong>{{taskSkubus}}</strong>
+  </div>
+  <div class="alert alert-dark" *ngIf="taskRutininis!=0" [ngClass]="{'d-none': taskRutininis==0}">
+    Prioritetas rutinis: <strong>{{taskRutininis}}</strong>
+  </div>
+  <div class="alert alert-danger" *ngIf="taskNeskubus!=0" [ngClass]="{'d-none': taskNeskubus==0}">
+    Prioritetas neskubus: <strong>{{taskNeskubus}}</strong>
+  </div>
+  <div class="alert alert-danger" *ngIf="ypacSkubus!=0" [ngClass]="{'d-none': ypacSkubus==0}">
+    Prioritetas ypac skubus: <strong>{{ypacSkubus}}</strong>
+  </div>
+</div>
